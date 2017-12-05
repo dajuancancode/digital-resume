@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2rem;
+    align-self: center;
+}
+
+.info{
+    font-weight: 400;
+}
+
+.info span{
+    font-weight: 300;
+}
+
+.resumeHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personHeader{
+    display: flex;
+}
+
+.mainContent{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sectionTitle{
+    height: 32px;
+    background-color: black;
+    color: white;
+}
+
+.sectionTitle,
+.jobCompany,
+.eduSchool{
+    display: flex;
+}
+
+.angleDown{
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.angleRight{
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+}
+
+.jobCompany,
+.eduSchool{
+    align-items: center;
+    position: relative;
+}
+
+.jobInfo h2,
+.eduInfo h2{
+    padding-left: .5em;
+    display: flex;
+}
+
+.date{
+    position: absolute;
+    right: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    align-self: center;
+}
+
+.jobInfo,
+.eduInfo{
+    font-size: 1.6rem;
+    padding: 0 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.jobTitle,
+.eduDegree,
+.jobDescription,
+.eduDescription{
+    padding-left: 28.5px;
+}
+
+.jobDescription,
+.eduDescription{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-self: center;
+}
+
+.progressConainer{
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgb(197, 197, 197);
+}
+
+.progressBar{
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+    position: relative
+}
+
+.progressBar p{
+    position: absolute;
+    right: 0;
+}
+
+.html{
+    max-width: 95%
+}
+
+.css{
+    max-width: 90%;
+}
+.javaScript{
+    max-width: 45%;
+}
+.python{
+    max-width: 60%;
+}
+
+.jQuery{
+    max-width: 30%;
+}
+
+.graphicSkills h1,
+.languageSkills h1{
+    padding: 1.5rem 0;
+}
+
+.skills h2,
+.skillTitle{
+    font-size: 1.5rem;
+    padding: .67em 0;
+}
+
+.box,
+.box2{
+    height: 16px;
+    width:16px;
+}
+
+.box2{
+    margin: 0 .5rem;
+    border-radius: 100%;
+}
+
+.skillContainer{
+    display: flex;
+    align-items: center;
+}
+
+.skillTitle{
+    padding-left: 15px;
+}
+
+.langSkill{
+    margin-right: 2rem;
+}
+
+.grey{
+    border: 1px solid lightgray;
+}
+
+@media (min-width: 1280px){
+    .mainContent{
+        flex-direction: row;
+    }
+
+    .history{
+        flex: 1;
+        max-width: 70%;
+        margin-top: 15rem;
+    }
+    
+    aside{
+        max-width: 30%;
+        padding-right: 2%;
+        margin-top: 15rem;
+    }
+}
