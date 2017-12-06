@@ -33,17 +33,35 @@ h2{
     font-weight: 400;
 }
 
+.history,
+aside{
+    margin-top: 10rem;
+}
+
 .info span{
     font-weight: 300;
+}
+
+.aboutMe{
+    padding-top: 2rem;
 }
 
 .resumeHeader{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .personHeader{
     display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.personInfo{
+    padding-bottom: 10px;
 }
 
 .mainContent{
@@ -86,10 +104,11 @@ h2{
     color: white;
 }
 
-.jobCompany,
-.eduSchool{
+.jobCompany:first-child,
+.eduSchool:first-child{
     align-items: center;
     position: relative;
+    padding-top: 1rem;
 }
 
 .jobInfo h2,
@@ -166,15 +185,20 @@ h2{
     max-width: 30%;
 }
 
+.skills h1{
+    padding-bottom: 1.5rem;
+}
+
 .graphicSkills h1,
 .languageSkills h1{
     padding: 1.5rem 0;
 }
 
 .skills h2,
-.skillTitle{
+.skillTitle,
+.langSkill{
     font-size: 1.5rem;
-    padding: .67em 0;
+    padding:  .33em 0;
 }
 
 .box,
@@ -205,7 +229,7 @@ h2{
     border: 1px solid lightgray;
 }
 
-@media (min-width: 1280px){
+@media (min-width: 768px){
     .mainContent{
         flex-direction: row;
     }
@@ -213,12 +237,21 @@ h2{
     .history{
         flex: 1;
         max-width: 70%;
-        margin-top: 15rem;
     }
     
     aside{
         max-width: 30%;
         padding-right: 2%;
-        margin-top: 15rem;
+    }
+
+    .resumeHeader,
+    .personHeader{
+        flex-direction: row;
+        text-align: left;
+        align-items: stretch;
+    }
+
+    .personInfo{
+        padding-left: 0;
     }
 }
